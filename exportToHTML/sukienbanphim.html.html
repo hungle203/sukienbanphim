@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>sukienbanphim.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bbbbbb;}
+.s1 { color: #d19a66; font-style: italic;}
+.s2 { color: #ef596f;}
+.s3 { color: #89ca78;}
+.s4 { color: #d19a66;}
+.s5 { color: #d55fde; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#282c34">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+sukienbanphim.html</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;!DOCTYPE </span><span class="s1">html</span><span class="s0">&gt;</span>
+<span class="s0">&lt;</span><span class="s2">html </span><span class="s1">lang</span><span class="s3">=&quot;en&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;</span><span class="s2">head</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;</span><span class="s2">meta </span><span class="s1">charset</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;</span><span class="s2">title</span><span class="s0">&gt;Title&lt;/</span><span class="s2">title</span><span class="s0">&gt;</span>
+<span class="s0">&lt;/</span><span class="s2">head</span><span class="s0">&gt;</span>
+<span class="s0">&lt;</span><span class="s2">body </span><span class="s1">onload</span><span class="s3">=&quot;</span><span class="s0">docReady()</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;</span><span class="s2">img </span><span class="s1">id</span><span class="s3">=&quot;girl&quot; </span><span class="s1">src</span><span class="s3">=&quot;https://toigingiuvedep.vn/wp-content/uploads/2021/06/anh-anime-cute-dep-vui-ve.jpg&quot;  </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s0">position:</span><span class="s4">absolute</span><span class="s0">;left:</span><span class="s4">0</span><span class="s0">; top:</span><span class="s4">0 </span><span class="s3">&quot; </span><span class="s1">width</span><span class="s3">=&quot;150px&quot;</span><span class="s1">height</span><span class="s3">=&quot;200px&quot; </span><span class="s1">alt</span><span class="s3">=&quot;&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;/</span><span class="s2">body</span><span class="s0">&gt;</span>
+<span class="s0">&lt;</span><span class="s2">script</span><span class="s0">&gt;</span>
+    <span class="s5">function </span><span class="s0">upArrowPressed() {</span>
+        <span class="s5">var </span><span class="s0">element = document.getElementById(</span><span class="s3">&quot;girl&quot;</span><span class="s0">);</span>
+        <span class="s0">element.style.top = parseInt(element.style.top) - </span><span class="s4">5 </span><span class="s0">+ </span><span class="s3">&quot;px&quot;</span><span class="s0">;</span>
+    <span class="s0">}</span><span class="s5">function </span><span class="s0">downArrowPressed() {</span>
+        <span class="s5">var </span><span class="s0">element = document.getElementById(</span><span class="s3">&quot;girl&quot;</span><span class="s0">);</span>
+        <span class="s0">element.style.top = parseInt(element.style.left) + </span><span class="s4">5 </span><span class="s0">+ </span><span class="s3">&quot;px&quot;</span><span class="s0">;</span>
+    <span class="s0">}</span><span class="s5">function </span><span class="s0">leftArrowPressed() {</span>
+        <span class="s5">var </span><span class="s0">element = document.getElementById(</span><span class="s3">&quot;girl&quot;</span><span class="s0">);</span>
+        <span class="s0">element.style.left = parseInt(element.style.left) - </span><span class="s4">5 </span><span class="s0">+ </span><span class="s3">&quot;px&quot;</span><span class="s0">;</span>
+    <span class="s0">}</span><span class="s5">function </span><span class="s0">rightArrowPressed() {</span>
+        <span class="s5">var </span><span class="s0">element = document.getElementById(</span><span class="s3">&quot;girl&quot;</span><span class="s0">);</span>
+        <span class="s0">element.style.left= parseInt(element.style.left) + </span><span class="s4">5 </span><span class="s0">+ </span><span class="s3">&quot;px&quot;</span><span class="s0">;</span>
+    <span class="s0">}</span>
+    <span class="s5">function </span><span class="s0">moveselection(evt) {</span>
+        <span class="s5">switch </span><span class="s0">(evt.keyCode) {</span>
+            <span class="s5">case </span><span class="s4">37</span><span class="s0">:</span>
+                <span class="s0">leftArrowPressed();</span>
+                <span class="s5">break</span><span class="s0">;</span>
+            <span class="s5">case </span><span class="s4">39</span><span class="s0">:</span>
+                <span class="s0">rightArrowPressed();</span>
+                <span class="s5">break</span><span class="s0">;</span>
+            <span class="s5">case </span><span class="s4">38</span><span class="s0">:</span>
+                <span class="s0">upArrowPressed();</span>
+                <span class="s5">break</span><span class="s0">;</span>
+            <span class="s5">case </span><span class="s4">40</span><span class="s0">:</span>
+                <span class="s0">downArrowPressed();</span>
+                <span class="s5">break</span><span class="s0">;</span>
+        <span class="s0">}</span>
+    <span class="s0">}</span>
+    <span class="s5">function </span><span class="s0">docReady() {</span>
+        <span class="s0">window.addEventListener(</span><span class="s3">&quot;keydown&quot;</span><span class="s0">, moveselection);</span>
+    <span class="s0">}</span>
+
+<span class="s0">&lt;/</span><span class="s2">script</span><span class="s0">&gt;</span>
+<span class="s0">&lt;/</span><span class="s2">html</span><span class="s0">&gt;</span></pre>
+</body>
+</html>
